@@ -1,0 +1,35 @@
+{
+  "name": "react-native-full-screen-slider",
+  "version": "1.0.0",
+  "description": "Full screen slider for react native",
+  "main": "index.js",
+  "scripts": {
+    "test": "react-native-full-screen-slider"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/f20manuel/react-native-full-screen-slider.git"
+  },
+  "keywords": [
+    "react",
+    "native",
+    "full",
+    "screen",
+    "slider",
+    "android",
+    "ios"
+  ],
+  "author": "Manuel Fernández",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/f20manuel/react-native-full-screen-slider/issues"
+  },
+  "homepage": "https://github.com/f20manuel/react-native-full-screen-slider#readme",
+  "dependencies": {
+    "@expo/vector-icons": "^10.2.0",
+    "expo-status-bar": "^1.0.2",
+    "react": "^16.13.1",
+    "react-native": "^0.63.2",
+    "react-native-paper": "^4.0.1"
+  }
+}
