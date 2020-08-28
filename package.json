@@ -1,6 +1,6 @@
 {
   "name": "react-native-full-screen-slider",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Full screen slider for react native",
   "main": "index.js",
   "scripts": {

@@ -16,7 +16,9 @@ import { StatusBar } from 'expo-status-bar';
 import { FontAwesome5 } from '@expo/vector-icons';
 import { MaterialCommunityIcons } from '@expo/vector-icons';
 
-const Slider = ({data}) => {
+const Slider = ({props}) => {
+  const { data: [] } = props
+
   const scrollX = useRef(new Animated.Value(0)).current;
 
   const { width: windowWidth, height: windowHeight } = useWindowDimensions();
@@ -95,7 +97,7 @@ const Slider = ({data}) => {
                     />
                   ):null}
                 <Title style={{ color: item.descriptionColor || 'white', textAlign: 'center' }}>
-                  {data.description}
+                  {item.description}
                 </Title>
               <Button style={{position: "absolute", bottom: 0}} color="#ffec4f">Omitir</Button>
               </View>
