@@ -55,7 +55,7 @@ const Slider = ({props}) => {
             },
           ])}
           scrollEventThrottle={1}>
-            {data?(
+            {!data || data.lenght === 0?(
               <View
                 style={{
                   justifyContent: 'center',
@@ -74,7 +74,7 @@ const Slider = ({props}) => {
                   }}
                 />
                 <Title style={{ color: 'white', textAlign: 'center' }}>
-                  Prop: data.descripction
+                  Prop: data.description
                 </Title>
               </View>
             ):data.map((item, index) => (
@@ -104,7 +104,7 @@ const Slider = ({props}) => {
             ))}
         </ScrollView>
         <View style={styles.indicatorContainer}>
-          {data?dot(0):data.map((item, index) => {dot(index)})}
+          {!data || data.lenght === 0?dot(0):data.map((item, index) => {dot(index)})}
         </View>
       </View>
       <StatusBar style="light" />
